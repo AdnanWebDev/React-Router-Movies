@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const Movie = (props) => {
   const [movie, setMovie] = useState();
-
+  //useState has null and it doesn't need {} to initialize otherwise Site boots up faster than axios completion
   useEffect(() => {
     const id = props.match.params.id;
     // change ^^^ that line and grab the id from the URL
